@@ -1,0 +1,119 @@
+
+.container-1, .container-2, .container-3,.container-4,.container-5, .container-6{
+    /* border: 1px solid black; */
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.flex-box-container-1, .flex-box-container-2, .flex-box-rps,
+.flex-blackjack-row-1, .flex-blackjack-row-2, .flex-blackjack-row-3{
+    display: flex;
+    /* border: 1px solid black; */
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.flex-blackjack-row-1, .flex-blackjack-row-2, .flex-blackjack-row-3{
+    color: white;
+    background-color: rgb(21, 73, 21);
+}
+
+.flex-box-container-1 div{
+    display: flex;
+    padding: 10px;
+    /* border: 1px solid black; */
+    align-items: center;
+}
+
+#result img{
+    -webkit-box-shadow: 44px 25px 24px 3px rgba(212,148,106,1);
+-moz-box-shadow: 44px 25px 24px 3px rgba(212,148,106,1);
+box-shadow: 20px 25px 24px 3px rgba(212,148,106,1);
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.flex-box-rps img{
+    padding: 20px;
+    height: 200px;
+    width: 200px;   
+    
+}
+
+.flex-box-rps img:hover{
+box-shadow: 10px 25px 24px 10px rgb(152, 151, 235);
+border-radius: 30px;
+}
+
+.flex-box-result{
+    display: flex;
+    /* border: 1px solid black; */
+    padding: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.flex-box-result h1{
+    text-align: center;
+    color: red;
+    font-size: 60px;
+}
+
+.flex-box-result img{
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+}
+
+.flex-box-pick-color{
+    padding: 10px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-box-pick-color button{
+    margin: 10px;
+}
+
+.content{
+    margin-top: 10px;
+}
+
+.result div{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.flex-blackjack-row-1 div{
+    height: 350px;
+    /* border: 1px solid black; */
+    text-align: center;
+    flex: 1;
+    
+}
+
+.flex-blackjack-row-1 img{
+    width: 21%;
+    padding: 10px;
+}
+.flex-blackjack-row-2 .buttons{
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+
+table, th, td {
+    /* border: 1px solid black; */
+    padding: 6px;
+    
+  }
+
+
+
+

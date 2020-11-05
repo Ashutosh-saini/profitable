@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js on steroids</title>
+    <link rel="stylesheet" href="static/index.css">
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-1 my-4">
+
+        <h2>Challenge 1 : Your Age in Days</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="ageInDays()">Click me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger" onclick="reset()">reset</button>
+            </div>
+        </div>
+
+        <div class="flex-box-container-1">
+            <div id="flex-box-result"></div>
+        </div>
+
+    </div>
+
+
+    <div class="container-2">
+        <h2>Challlenge 2: Cat Generator</h2>
+        <div class="flex-box-container-2">
+            <button class="btn btn-success " onclick="generateCat()">Generate Cat</button>
+        </div>
+        <div class="flex-box-container-2" id="result"></div>
+    </div>
+
+
+    <div class="container-3">
+        <h2>Challenge 3: Rock, Paper, Scissors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div"> 
+            <img src="static/images/rock.jfif" onclick="rpsGame(this)" alt="" id="rock">
+            <img src="static/images/paper.jfif" onclick="rpsGame(this)" alt="" id="paper">
+            <img src="static/images/scissor.jfif" onclick="rpsGame(this)" alt="" id="scissor">
+        </div>
+        <div class="flex-box-result" id="game-result"></div>
+    </div>
+
+    <div class="container-4">
+        <h1>Challenge 4: Change the Color of All Buttons!</h1>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select class="custom-select my-1 mr-sm-2"  id="background" name="backdrop" onchange="buttonColorChange(this)">
+                  <option value="random">Random</option>
+                  <option value="red">Red</option>
+                  <option value="green">Green</option>
+                  <option value="reset">Reset</option>
+                </select>
+              </form>
+            <button class="btn btn-primary">Wee!</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning">Google!</button>
+            <button class="btn btn-success">Facebook!</button>
+        </div>
+    </div>
+
+    <div class="container-5">
+        <h1>Challenge 5: Guess the Number</h1>
+        <input type="text" id="guess" placeholder="Enter the guess">
+        <div id="guessResult" class="result">
+
+        </div>
+        <div class="content">
+            <button class="btn btn-primary" onclick="guessButton()">Check Me</button>
+        </div>
+    </div>
+
+    <div class="container-6">
+        <h1>Challenge 6: Blackjack</h1>
+        <h3><span id="blackjack-result">Let's play</span></h3>
+        <div class="flex-blackjack-row-1">
+            <div id="your-box" ><h2>You: <span id="your-blackjack-result">0</span></h2></div>
+            <div id="dealer-box" ><h2>Dealer: <span id="dealer-blackjack-result">0</span></h2></div>
+        </div>
+   
+    
+        <div class="flex-blackjack-row-2">
+            <div class="buttons">
+            <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">Hit</button>
+            <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">Stand</button>
+            <button class="btn-lg btn-danger mr-2" id="blackjack-deal-button">Deal</button>
+        </div>
+        </div>
+
+         
+        <div class="flex-blackjack-row-3">
+            <table >
+                <tr >
+                <th>Wins</th>
+                <th>Loses</th>
+                <th>Draw</th>
+            </tr>
+            <tr>
+                <td><span id="wins"> 0</span></td>
+                <td><span id="losses"> 0</span></td>
+                <td><span id="draws"> 0</span></td>
+            </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+
+    <script src="static/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
